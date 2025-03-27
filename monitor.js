@@ -36,7 +36,7 @@ async function fetchPageContent(site, browser) {
     await page.waitForSelector(site.selector, { timeout: 10000 });
     
     // Wait for dynamic content to render
-    await new Promise(resolve => setTimeout(resolve, 2000));
+    await new Promise(resolve => setTimeout(resolve, 3000));
     
     // Extract content
     const content = await page.evaluate(selector => {

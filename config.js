@@ -45,12 +45,17 @@ export const config = {
     {
       name: 'Block (Square)',
       url: 'https://block.xyz/careers/jobs?businessUnits[]=square&businessUnits[]=block&businessUnits[]=cashapp&businessUnits[]=spiral&businessUnits[]=afterpay&businessUnits[]=proto&employeeTypes[]=Regular&locations[]=Seattle%2C%20WA%2C%20US&teams[]=Machine%20Learning%2FData%20Science&teams[]=Software%20Engineering&teams[]=Information%20Technology&teams[]=Hardware',
-      selector: 'body > div:nth-child(1) > div.svelte-16j2cvj > div > div.wrapper.svelte-1v7e8cw > div > div:nth-child(3) > div.css-m02tqu.list.svelte-16l094u > div',
+      selector: '#jobs-list-filters',
     },
     {
-      name: 'Figma',
+      name: 'Figma (early career)',
       url: 'https://www.figma.com/careers/#job-openings',
-      selector: '#job-openings > div > div.css-qzyf42 > div:nth-child(1)',
+      selector: '#job-openings > div > div.css-qzyf42 > div:nth-child(1) > div:nth-child(3)',
+    },
+    {
+      name: 'Figma (engineering)',
+      url: 'https://www.figma.com/careers/#job-openings',
+      selector: '#job-openings > div > div.css-qzyf42 > div:nth-child(1) > div:nth-child(4)',
     },
     {
       name: 'GitHub',
@@ -84,13 +89,13 @@ export const config = {
     },
     {
       name: 'Duolingo',
-      url: 'https://careers.duolingo.com/',
+      url: 'https://careers.duolingo.com/?location=Seattle%2C+WA#careers',
       selector: '#careers',
     },
     {
       name: 'Dropbox',
       url: 'https://jobs.dropbox.com/teams/engineering',
-      selector: '#main > div.jc02-open-positions > div > div.open-positions__groups > div > div.open-positions__listing-group-div',
+      selector: '#main > div.jc02-open-positions > div > div.open-positions__groups > div > div.open-positions__listing-group-div > ul',
     },
     {
       name: 'Pinterest',
@@ -105,7 +110,7 @@ export const config = {
     {
       name: 'Salesforce (Tableau)',
       url: 'https://careers.salesforce.com/en/jobs/?search=&country=United+States+of+America&region=Washington&location=Bellevue&location=Remote&location=Seattle&type=Full+time&jobtype=New+Grads&pagesize=20#results',
-      selector: '#content > div.foliage-below > div > div.jobs-grid-wrapper',
+      selector: '#results',
     },
     {
       name: 'MongoDB',
@@ -120,7 +125,7 @@ export const config = {
     {
       name: 'Databricks',
       url: 'https://www.databricks.com/company/careers/open-positions?department=University%20Recruiting&location=Washington',
-      selector: '#main > div:nth-child(1) > div > div > div',
+      selector: '#jobWrap',
     },
     {
       name: 'Snowflake',
@@ -139,7 +144,7 @@ export const config = {
     },
     {
       name: 'Visa',
-      url: 'https://corporate.visa.com/en/jobs/?functions=Technology&cities=Bellevue&cities=Washington&sortProperty=createdOn&sortOrder=DESC',
+      url: 'https://corporate.visa.com/en/jobs/?categories=Software%20Development%2FEngineering&categories=Software%20Quality%20Assurance%20and%20Testing&categories=Technology%20and%20Operations&categories=Systems%20%26%20Database%20Admin,%20Analysis,%20Design&categories=Data%20Architect%2FEngineering%2FScience&categories=Data%20Science%2FData%20Engineering&categories=Information%20Technology&functions=Product&functions=Technology&cities=Bellevue&cities=Washington',
       selector: '#results',
     },
     {
@@ -179,13 +184,13 @@ export const config = {
     },
     {
       name: 'Uber',
-      url: 'https://www.uber.com/us/en/careers/list/?location=USA-Washington-Seattle&department=Engineering&department=University',
+      url: 'https://www.uber.com/us/en/careers/list/?location=USA-Washington-Seattle&department=Engineering&department=University&team=Engineering',
       selector: '#main > div:nth-child(2) > div > div > div > div > div:nth-child(4)',
     },
     {
       name: 'IBM',
       url: 'https://www.ibm.com/careers/search?field_keyword_08[0]=Software%20Engineering&field_keyword_18[0]=Entry%20Level&field_keyword_05[0]=United%20States',
-      selector: '#ibm-hits-wrapper',
+      selector: '#ibm-hits-wrapper > div',
     },
     {
       name: 'Docusign',
@@ -250,7 +255,7 @@ export const config = {
     {
       name: 'Intel',
       url: 'https://jobs.intel.com/en/search-jobs/Washington%2C%20US/599/3/6252001-5815135/47x50012/-120x50147/50/2',
-      selector: '#search-results',
+      selector: '#search-results-list',
     },
     {
       name: 'Datadog',
@@ -274,14 +279,80 @@ export const config = {
     },
     {
       name: 'Intuit',
-      url: 'https://careers.expediagroup.com/jobs/?keyword=engineer&filter%5Bcategory%5D=Technology&filter%5Bjobfamily%5D=&filter%5Bcountry%5D=United+States&filter%5Bstate%5D=Washington&filter%5Bcity%5D=',
-      selector: 'body > main > section.Results > div > div',
-    },
-    {
-      name: 'Twilio',
       url: 'https://jobs.intuit.com/search-jobs/engineer/Washington%2C%20US/27595/1/3/6252001-5815135/47x50012/-120x50147/50/2',
       selector: '#content > div.search-results.section4 > div.section4__inner-wrapper > div.section4__results-wrapper',
     },
+    {
+      name: 'Twilio',
+      url: 'https://www.twilio.com/en-us/company/jobs',
+      selector: '#open-positions > div.position-column > div.position-feed',
+    },
+    // TODO: add , Slack, Wish, Bloomberg, Paypal, Scale AI, Waymo, Cruise
+    {
+      name: 'Lyft',
+      url: 'https://www.lyft.com/careers#openings?location=seattle%252C%2520wa&category=software%2520engineering',
+      selector: '#openings > div > div > div.sc-q480ss-0.euPhRP > div:nth-child(6)'
+    },
+    {
+      name: 'Yelp (remote)',
+      url: 'https://www.yelp.careers/us/en/search-results?keywords=engineer',
+      selector: 'body > div.ph-page > div.body-wrapper.ph-page-container > div > div > div > div.col-md-8.col-sm-7.jobresults-right-column > section:nth-child(2) > div > div > div > div:nth-child(1)'
+    },
+    {
+      name: 'Slack',
+      url: 'https://slack.com/careers/dept/software-engineering/type/regular',
+      selector: '#main > section.o-section--job-listings.v--borderless > div:nth-child(6)'
+    },
+    {
+      name: 'Wish',
+      url: 'https://www.wish.com/careers/jobs',
+      selector: '#react-app > div > div.CareerSection__Wrapper-sc-11sddeu-0.kAUQja > div > div.CareerSection__ChildrenWrapper-sc-11sddeu-5.kHewLs > div'
+    },
+    {
+      name: 'Bloomberg',
+      url: 'https://bloomberg.avature.net/careers/SearchJobs/?1686=%5B55478%5D&1686_format=2312&2562=%5B219290%5D&2562_format=6594&listFilterMode=1&jobRecordsPerPage=12&',
+      selector: '#main > div > div > section'
+    },
+    {
+      name: 'PayPal',
+      url: 'https://paypal.eightfold.ai/careers?query=Recent%20grad&location=Seattle&domain=paypal.com&sort_by=relevance&location_distance_km=160&triggerGoButton=true',
+      selector: '#pcs-body-container > div:nth-child(2) > div.accordion > div > div'
+    },
+    {
+      name: 'Scale AI',
+      url: 'https://scale.com/careers#open-roles',
+      selector: '#jobs > div.w-full > div > div.w-full.ρi.ρtQ4Nh > div:nth-child(1)'
+    },
+    {
+      name: 'Waymo',
+      url: 'https://careers.withwaymo.com/jobs/search?page=1&department_uids%5B%5D=451e57010e816b71a8312792faf5740f&employment_type_uids%5B%5D=2ea50d7de0fbb2247d09474fbb5ee4da&country_codes%5B%5D=US&states%5B%5D=Washington&dropdown_field_1_uids%5B%5D=032bf1b3c966086ebe1d0cd037cd2eef&query=',
+      selector: '#page_block_1_0 > form > div > div > div.col-md-9.col-xs-12.col-12 > div'
+    },
+    {
+      name: 'Reddit',
+      url: '',
+      selector: ''
+    },
+    {
+      name: 'Nvidia',
+      url: '',
+      selector: ''
+    },
+    {
+      name: 'UiPath',
+      url: '',
+      selector: ''
+    },
+    {
+      name: 'Etsy',
+      url: '',
+      selector: ''
+    },
+    {
+      name: 'Indeed',
+      url: '',
+      selector: ''
+    }
   ],
   paths: {
     snapshots: path.join(__dirname, './snapshots'),
