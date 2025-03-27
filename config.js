@@ -213,11 +213,6 @@ export const config = {
       selector: '#main-container',
     },
     {
-      name: 'Disney (Hulu)',
-      url: 'https://jobs.disneycareers.com/search-jobs/seattle%20engineer/391-28648/1?glat=48.8465&glon=-122.59101',
-      selector: '#search-results',
-    },
-    {
       name: 'Morgan Stanley',
       url: 'https://www.morganstanley.com/careers/career-opportunities-search?opportunity=sg#',
       selector: '#maincontent > div > div.opportunity-aggregate.aem-GridColumn.aem-GridColumn--default--12 > div > div.cmp-opportunity--filter--resultset.studentsandgrads',
