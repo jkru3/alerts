@@ -325,28 +325,18 @@ export const config = {
     },
     {
       name: 'Reddit',
-      url: '',
-      selector: ''
-    },
-    {
-      name: 'Nvidia',
-      url: '',
-      selector: ''
+      url: 'https://redditinc.com/careers',
+      selector: '#jobs-16253'
     },
     {
       name: 'UiPath',
-      url: '',
-      selector: ''
-    },
-    {
-      name: 'Etsy',
-      url: '',
-      selector: ''
+      url: 'https://www.uipath.com/careers/jobs',
+      selector: '#root'
     },
     {
       name: 'Indeed',
-      url: '',
-      selector: ''
+      url: 'https://www.indeed.com/cmp/Indeed/jobs?q=&l=Washington+State',
+      selector: '#cmp-container > div > div.dd-privacy-allow.css-u74ql7.eu4oa1w0 > div.css-u74ql7.eu4oa1w0'
     }
   ],
   paths: {
