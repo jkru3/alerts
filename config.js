@@ -35,7 +35,7 @@ export const config = {
     {
       name: 'Apple',
       url: 'https://jobs.apple.com/en-us/search?sort=relevance&key=university+new%252520grad+entry%252520level&location=seattle-SEA&team=apps-and-frameworks-SFTWR-AF+cloud-and-infrastructure-SFTWR-CLD+core-operating-systems-SFTWR-COS+devops-and-site-reliability-SFTWR-DSR+engineering-project-management-SFTWR-EPM+information-systems-and-technology-SFTWR-ISTECH+machine-learning-and-ai-SFTWR-MCHLN+security-and-privacy-SFTWR-SEC+software-quality-automation-and-tools-SFTWR-SQAT+wireless-software-SFTWR-WSFT',
-      selector: '#translations-container > div:nth-child(2) > main > div.results-area--search-term.results-area1.results-area-hldr.clearfix > section.results-right',
+      selector: '#search-results',
     },
     {
       name: 'Tesla',
@@ -185,27 +185,27 @@ export const config = {
     {
       name: 'Uber',
       url: 'https://www.uber.com/us/en/careers/list/?location=USA-Washington-Seattle&department=Engineering&department=University&team=Engineering',
-      selector: '#main > div:nth-child(2) > div > div > div > div > div:nth-child(4)',
+      selector: '#main',
     },
     {
       name: 'IBM',
       url: 'https://www.ibm.com/careers/search?field_keyword_08[0]=Software%20Engineering&field_keyword_18[0]=Entry%20Level&field_keyword_05[0]=United%20States',
-      selector: '#ibm-hits-wrapper > div',
+      selector: '#ibm-hits-wrapper',
     },
     {
       name: 'Docusign',
       url: 'https://careers.docusign.com/jobs?categories=University%20%26%20New%20Grad&page=1&locations=Seattle,Washington,United%20States&tags1=Regular',
-      selector: '#all-content > search-app > search-base-search-holder > search-results > div > div',
+      selector: '#all-content',
     },
     {
       name: 'Zillow',
       url: 'https://zillow.wd5.myworkdayjobs.com/Zillow_Group_External?locations=f40b9d6c2e7e106cff1b7456d157077d&locations=76d84517207210c0ae04392fff1ae612&locations=76d84517207210c0ae044056e60ae621&locations=76d84517207210c0ae043e019fb2e61c&locations=0b71ea84e3241049641e8519d8ff02a3&locations=f40b9d6c2e7e106cff5f6a7ed8e107dc&locations=0b71ea84e324104964c6dd0a324202c8&locations=c8e2d13628e71058190200d0f7253703&locations=0b71ea84e32410496457f7e3fa9302ac&locations=76d84517207210c0ae04369cfffae60d&locations=76d84517207210c0ae0442a9de8ae626&locations=76d84517207210c0ae042f9587eae5fe&locations=e843d806ae9410c8040005b62f02d624&locations=bf3166a9227a01f8b514f0b00b147bc9&locations=76d84517207210c0ae0423975342e5e5&timeType=156fb9a2f01c10be203b6e91581a01d1&workerSubType=156fb9a2f01c10bed80e140d011a9559&jobFamilyGroup=a90eab1aaed6105e8dd41df427a82ee6',
-      selector: '#mainContent > div > div.css-1142bqn > section',
+      selector: '#mainContent',
     },
     {
       name: 'JPMC',
-      url: 'https://careers.jpmorgan.com/us/en/students/programs/software-engineer-cohort',
-      selector: '#careers-section7',
+      url: 'https://jpmc.fa.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/jobs?keyword=Technology&lastSelectedFacet=CATEGORIES&location=WA%2C+United+States&locationId=300000020657215&locationLevel=state&mode=location&selectedCategoriesFacet=300000086152753',
+      selector: '#main',
     },
     {
       name: 'American Express',
@@ -215,7 +215,7 @@ export const config = {
     {
       name: 'Morgan Stanley',
       url: 'https://www.morganstanley.com/careers/career-opportunities-search?opportunity=sg#',
-      selector: '#maincontent > div > div.opportunity-aggregate.aem-GridColumn.aem-GridColumn--default--12 > div > div.cmp-opportunity--filter--resultset.studentsandgrads',
+      selector: '#maincontent',
     },
     {
       name: 'Workday',
@@ -249,7 +249,7 @@ export const config = {
     },
     {
       name: 'Intel',
-      url: 'https://jobs.intel.com/en/search-jobs/Washington%2C%20US/599/3/6252001-5815135/47x50012/-120x50147/50/2',
+      url: 'https://intel.wd1.myworkdayjobs.com/en-US/External?shared_id=YzNiNDdlOTgtMjk4Yi00NTU4LTk5MjktODFkNzVlNDcwN2M0&locations=1e4a4eb3adf101cc4e292078bf8199d0&locations=1e4a4eb3adf101770f350977bf8193cf&jobFamilyGroup=ace7a3d23b7e01a0544279031a0ec85c&workerSubType=dc8bf79476611087dfde9c6b065bae76',
       selector: '#search-results-list',
     },
     {
