@@ -35,12 +35,12 @@ export const config = {
     {
       name: 'American Express',
       url: 'https://aexp.eightfold.ai/careers?location=Seattle%2C%20Washington%2C%20United%20States&Select%20Primary%20Career%20Areas=technology&Role%20Type=professional%20%28band%2040%20and%20below%29&Select%20Seniority=Entry%20Level&domain=aexp.com&sort_by=relevance&hl=en&triggerGoButton=false',
-      selector: '#main-container',
+      selector: '#pcs-body-container',
     },
     {
       name: 'Anduril',
-      url: 'https://www.anduril.com/open-roles/?location=Seattle%2C+Washington%2C+United+States_Remote&department=&search=&gh_src=',
-      selector: '#__next > div > div.Wrapper.Wrapper--active > div > div > div > div.JobListing.JobListing_element__Cy_Yt > div:nth-child(6) > div.JobListing_jobListContent__Pc98R',
+      url: 'https://www.anduril.com/open-roles/?location=Seattle%2C+Washington%2C+United+States_Remote&department=Software&search=&gh_src=',
+      selector: '#__next',
     },
     {
       name: 'Bloomberg',
@@ -60,7 +60,7 @@ export const config = {
     {
       name: 'Blue Origin',
       url: 'https://www.blueorigin.com/careers/search?location=Arlington%2C+WA%3BSeattle%2C+WA&category=Developer+-+Software+Engineer&employmentType=Regular',
-      selector: '#main > section:nth-child(2) > div',
+      selector: '#main',
     },
     {
       name: 'Cloudflare',
@@ -100,12 +100,12 @@ export const config = {
     {
       name: 'Expedia',
       url: 'https://careers.expediagroup.com/jobs/?keyword=engineer&filter%5Bcategory%5D=Technology&filter%5Bjobfamily%5D=&filter%5Bcountry%5D=United+States&filter%5Bstate%5D=Washington&filter%5Bcity%5D=',
-      selector: 'body > main > section.Results > div > div',
+      selector: '#resultslist',
     },
     {
       name: 'Ebay',
       url: 'https://jobs.ebayinc.com/us/en/search-results?qstate=Washington&qcountry=United%20States%20of%20America',
-      selector: '#acc-skip-content > div.body-wrapper.ph-page-container > div > div > div > div.col-md-8.col-sm-7',
+      selector: '#acc-skip-content',
     },
     {
       name: 'Figma (early career)',
@@ -145,7 +145,7 @@ export const config = {
     {
       name: 'Intel',
       url: 'https://intel.wd1.myworkdayjobs.com/en-US/External?shared_id=YzNiNDdlOTgtMjk4Yi00NTU4LTk5MjktODFkNzVlNDcwN2M0&locations=1e4a4eb3adf101cc4e292078bf8199d0&locations=1e4a4eb3adf101770f350977bf8193cf&jobFamilyGroup=ace7a3d23b7e01a0544279031a0ec85c&workerSubType=dc8bf79476611087dfde9c6b065bae76',
-      selector: '#search-results-list',
+      selector: '#mainContent',
     },
     {
       name: 'Indeed',
@@ -195,12 +195,12 @@ export const config = {
     {
       name: 'Oracle',
       url: 'https://careers.oracle.com/jobs/#en/sites/jobsearch/jobs?lastSelectedFacet=AttributeChar6&location=United+States&locationId=300000000149325&selectedFlexFieldsFacets=%22AttributeChar29%7CIndividual+Contributor%7C%7CAttributeChar13%7CCampus%7C%7CAttributeChar6%7C0+to+2%2B+years%22&selectedLocationsFacet=100000000731910',
-      selector: '#main > div > div > div > div:nth-child(2) > div > div:nth-child(1) > div > div > div > div > div > div',
+      selector: '#main',
     },
     {
       name: 'Okta',
       url: 'https://app.ripplematch.com/v2/public/company/okta?tl=aa34db13#cbp-jobs',
-      selector: '#main > div > div > div:nth-child(4) > div:nth-child(2) > div:nth-child(2) > section > div:nth-child(1)',
+      selector: '#main',
     },
     {
       name: 'PayPal',
@@ -285,7 +285,7 @@ export const config = {
     {
       name: 'Twilio',
       url: 'https://www.twilio.com/en-us/company/jobs',
-      selector: '#open-positions > div.position-column > div.position-feed',
+      selector: '#open-positions',
     },
     {
       name: 'Uber',
@@ -315,12 +315,12 @@ export const config = {
     {
       name: 'Workday',
       url: 'https://workday.wd5.myworkdayjobs.com/Workday_Early_Career',
-      selector: '#mainContent > div > div.css-1142bqn > section',
+      selector: '#mainContent',
     },
     {
       name: 'X',
       url: 'https://careers.x.com/en',
-      selector: '#main > div > div.src__BoxElement-EDYfg.lmyQbK.ac02-box.aem-container > div > div.src__BoxElement-EDYfg.lmyQbK.ac02-box.aem-container > div.ac03-stack--full-width > div.src__BoxElement-EDYfg.dQrBe.ac02-box.aem-container > div > div.src__StackContainer-jhtMMW.hKrSAM.atm-reset-list-counter.ac03-stack.aem-container > div.src__StackItemElem-iqmOUd.eTxaRR > div > div.src__GridContainer-cKcsmU.kioaBJ.atm-reset-list-counter.ac01-grid.aem-container > div > div > div > div.ac03-stack--full-width > div.src__StackContainer-jhtMMW.hKrSAM.atm-reset-list-counter.ac03-stack.aem-container > div.src__StackItemElem-iqmOUd.iXDORx > div > div:nth-child(1) > div > div > div.grid-item__Item-dCtxOM.blDKDw > div',
+      selector: '#main',
     },
     {
       name: 'Yelp (remote)',

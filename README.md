@@ -12,5 +12,5 @@ This will start a local web server at http://localhost:3000 that updates every 3
 `node monitor.js`
 
 # TODO:
-- [ ] **follow companies, connect with employees, and log career sites**
-- [ ] simplify this. It works, but it takes FOREVER
+- [ ] figure out if possible to scrape with specified locations
+- [ ] ANDURIL -> alphabetizes it's roles. scrape so that you figure out EXACTLY when a role is posted
